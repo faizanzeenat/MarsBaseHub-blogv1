@@ -3,21 +3,247 @@
 &lt;head&gt;<br>
 &nbsp; &lt;meta charset="UTF-8" /&gt;<br>
 &nbsp; &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;<br>
-&nbsp; &lt;title&gt;Faizan's Lori Website&lt;/title&gt;<br>
+&nbsp; &lt;title&gt;MarsBaseHub - Powering The Future&lt;/title&gt;<br>
 &nbsp; &lt;style&gt;<br>
-&nbsp;&nbsp;&nbsp; body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }<br>
-&nbsp;&nbsp;&nbsp; h1 { color: #333; }<br>
-&nbsp;&nbsp;&nbsp; p { font-size: 18px; }<br>
-&nbsp; &lt;/style&gt;<br>
-&lt;/head&gt;<br>
-&lt;body&gt;<br>
-&nbsp; &lt;h1&gt;Welcome to Faizan's Lori Website!&lt;/h1&gt;<br>
-&nbsp; &lt;p&gt;This is a simple website deployed from mobile.&lt;/p&gt;<br>
-&nbsp; &lt;button onclick="showMessage()"&gt;Click Me&lt;/button&gt;</p>
-<p dir="ltr">&nbsp; &lt;script&gt;<br>
-&nbsp;&nbsp;&nbsp; function showMessage() {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert('Thanks for visiting my Lori Website!');<br>
+&nbsp;&nbsp;&nbsp; /* Reset &amp; base */<br>
+&nbsp;&nbsp;&nbsp; * {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin: 0; padding: 0; box-sizing: border-box;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;<br>
 &nbsp;&nbsp;&nbsp; }<br>
-&nbsp; &lt;/script&gt;<br>
-&lt;/body&gt;<br>
+&nbsp;&nbsp;&nbsp; body {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #f0f0f0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; min-height: 100vh;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display: flex;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flex-direction: column;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; header {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: #121212cc;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 15px 40px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display: flex;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; justify-content: space-between;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; align-items: center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; position: sticky;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; top: 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; z-index: 1000;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; box-shadow: 0 2px 8px rgba(0,0,0,0.5);<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; .logo {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 2rem;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-weight: 900;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; letter-spacing: 3px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #00ffe7;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; user-select: none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cursor: default;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; nav a {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #e0f7fa;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-left: 25px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-weight: 600;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-decoration: none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transition: color 0.3s ease;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; nav a:hover {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #00ffe7;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; main {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flex: 1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display: flex;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flex-direction: column;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; justify-content: center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; align-items: center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 80px 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align: center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; max-width: 900px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin: 0 auto;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; main h1 {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 3.8rem;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-weight: 900;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #00ffe7;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-shadow: 0 0 15px #00ffe7;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-bottom: 20px;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; main p {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 1.4rem;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #b0e0e6cc;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-bottom: 40px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; line-height: 1.6;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; main button {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: linear-gradient(90deg, #00ffe7, #00bfa5);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border: none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 18px 50px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 1.25rem;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-weight: 700;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #111;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border-radius: 35px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cursor: pointer;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; box-shadow: 0 8px 20px #00ffe7aa;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transition: background 0.3s ease;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; user-select: none;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; main button:hover {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: linear-gradient(90deg, #00bfa5, #00ffe7);<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; section.features {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: #111a1e;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 60px 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display: flex;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; justify-content: space-around;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flex-wrap: wrap;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gap: 30px;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; .feature-box {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: #1e2a2f;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border-radius: 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 30px 25px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width: 250px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; box-shadow: 0 0 20px #00ffe7aa;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transition: transform 0.3s ease;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cursor: default;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; .feature-box:hover {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transform: translateY(-10px);<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; .feature-icon {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 3.5rem;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #00ffe7;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-bottom: 15px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; user-select: none;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; .feature-title {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 1.4rem;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-weight: 700;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-bottom: 10px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #00ffe7cc;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; .feature-desc {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 1rem;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #aad1d6;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; line-height: 1.5;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; footer {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: #121212cc;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 25px 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align: center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #555;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 0.9rem;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; user-select: none;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; /* Modal styles */<br>
+&nbsp;&nbsp;&nbsp; #modal {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; position: fixed;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; top:0; left:0; right:0; bottom:0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: rgba(0,0,0,0.8);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display: none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; justify-content: center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; align-items: center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; z-index: 2000;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; #modal-content {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: #222;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 30px 40px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border-radius: 15px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; max-width: 400px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align: center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; box-shadow: 0 0 20px #00ffe7aa;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #00ffe7;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-weight: 700;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 1.3rem;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; #modal-close {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-top: 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 10px 25px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: #00bfa5;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border: none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border-radius: 25px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #111;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-weight: 700;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cursor: pointer;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transition: background 0.3s ease;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; #modal-close:hover {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: #00ffe7;<br>
+&nbsp;&nbsp;&nbsp; }</p>
+<p dir="ltr">&nbsp;&nbsp;&nbsp; /* Responsive */<br>
+&nbsp;&nbsp;&nbsp; @media (max-width: 768px) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; main h1 {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 2.8rem;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; main p {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 1.1rem;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; section.features {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flex-direction: column;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; align-items: center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .feature-box {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width: 100%;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; max-width: 350px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp; &lt;/style&gt;<br>
+&nbsp; &lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&amp;display=swap" rel="stylesheet" /&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;</p>
+<p dir="ltr">&nbsp; &lt;header&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;div class="logo"&gt;MarsBaseHub&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;nav&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#features"&gt;Features&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#contact"&gt;Contact&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/nav&gt;<br>
+&nbsp; &lt;/header&gt;</p>
+<p dir="ltr">&nbsp; &lt;main&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;h1&gt;Powering &amp; Gearing Up The Future&lt;/h1&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;p&gt;Welcome to MarsBaseHub, your gateway to innovative space technology and futuristic solutions that elevate your vision beyond limits.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;button id="startBtn"&gt;Get Started&lt;/button&gt;<br>
+&nbsp; &lt;/main&gt;</p>
+<p dir="ltr">&nbsp; &lt;section class="features" id="features"&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;div class="feature-box"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="feature-icon"&gt;&#128640;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="feature-title"&gt;Cutting-Edge Tech&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="feature-desc"&gt;Explore the latest innovations in space and tech to stay ahead of the curve.&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;div class="feature-box"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="feature-icon"&gt;&#127756;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="feature-title"&gt;Futuristic Design&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="feature-desc"&gt;Modern, sleek designs that embody the spirit of exploration and progress.&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;div class="feature-box"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="feature-icon"&gt;&#128295;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="feature-title"&gt;Custom Solutions&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="feature-desc"&gt;Tailored services that meet your unique needs and help your business thrive.&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+&nbsp; &lt;/section&gt;</p>
+<p dir="ltr">&nbsp; &lt;footer id="contact"&gt;<br>
+&nbsp;&nbsp;&nbsp; &amp;copy; 2025 MarsBaseHub. All rights reserved. | Contact: info@marsbasehub.com<br>
+&nbsp; &lt;/footer&gt;</p>
+<p dir="ltr">&nbsp; &lt;!-- Modal --&gt;<br>
+&nbsp; &lt;div id="modal"&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;div id="modal-content"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thank you for exploring MarsBaseHub! We will contact you soon.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;br /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button id="modal-close"&gt;Close&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+&nbsp; &lt;/div&gt;</p>
+<p dir="ltr">&nbsp; &lt;script&gt;<br>
+&nbsp;&nbsp;&nbsp; // JavaScript for modal popup on button click<br>
+&nbsp;&nbsp;&nbsp; const startBtn = document.getElementById('startBtn');<br>
+&nbsp;&nbsp;&nbsp; const modal = document.getElementById('modal');<br>
+&nbsp;&nbsp;&nbsp; const modalClose = document.getElementById('modal-close');</p>
+<p dir="ltr">&nbsp;&nbsp;&nbsp; startBtn.addEventListener('click', () =&gt; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; modal.style.display = 'flex';<br>
+&nbsp;&nbsp;&nbsp; });</p>
+<p dir="ltr">&nbsp;&nbsp;&nbsp; modalClose.addEventListener('click', () =&gt; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; modal.style.display = 'none';<br>
+&nbsp;&nbsp;&nbsp; });</p>
+<p dir="ltr">&nbsp;&nbsp;&nbsp; // Close modal on outside click<br>
+&nbsp;&nbsp;&nbsp; window.addEventListener('click', (e) =&gt; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (e.target === modal) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; modal.style.display = 'none';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; });<br>
+&nbsp; &lt;/script&gt;</p>
+<p dir="ltr">&lt;/body&gt;<br>
 &lt;/html&gt;</p>
