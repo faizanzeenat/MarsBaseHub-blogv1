@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MarsBaseHub — The Future of Mars</title>
+  <meta name="description" content="MarsBaseHub — visions, uploads, and future stories of Mars. Futuristic, branded landing page ready to deploy." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom small animations & glow */
+    .glow { box-shadow: 0 8px 30px rgba(124,58,237,0.25); }
+    .planet { animation: float 6s ease-in-out infinite; }
+    @keyframes float { 0% { transform: translateY(0); } 50% { transform: translateY(-12px) rotate(-2deg);} 100%{ transform: translateY(0);} }
+    .glass { backdrop-filter: blur(6px); background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.06); }
+    /* file preview grid */
+    .thumb { width:72px; height:72px; object-fit:cover; border-radius:8px; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-indigo-900 to-black text-slate-100 antialiased">
+  <main class="min-h-screen flex flex-col">
+    <!-- NAV -->
+    <nav class="py-6 px-6 sm:px-12 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-500 to-indigo-500 flex items-center justify-center glow">
+          <!-- simple rocket icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2c1.1 0 2 .9 2 2 0 .4-.1.7-.3 1l-1.4 1.4c.7 1.1 1.8 2.8 1.8 5.6 0 3-2.5 5.5-5.5 5.5-2.8 0-4.5-1.1-5.6-1.8L5 15.3c.3.2.6.3 1 .3 1.1 0 2-.9 2-2 0-.3 0-.6-.1-.9L12 2z" fill="white"/></svg>
+        </div>
+        <div>
+          <h1 class="font-semibold text-lg">MarsBaseHub</h1>
+          <p class="text-xs text-slate-400 -mt-1">Visionary archives for the red future</p>
+        </div>
+      </div>
+      <div class="hidden md:flex gap-6 items-center">
+        <a class="text-slate-300 hover:text-white" href="#about">About</a>
+        <a class="text-slate-300 hover:text-white" href="#upload">Upload</a>
+        <a class="px-4 py-2 rounded-xl glass text-sm" href="#getstarted">Get Started</a>
+      </div>
+      <div class="md:hidden text-slate-300">☰</div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6 sm:px-12 py-12">
+      <section>
+        <h2 class="text-4xl sm:text-5xl font-extrabold leading-tight">Hello from <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-400">MarsBaseHub</span></h2>
+        <p class="mt-4 text-slate-300 max-w-xl">A futuristic hub showing how Mars could look — share files, ideas, and multimedia. Built to feel like a top-tier brand: clean, futuristic, and ready to scale.</p>
+        <div class="mt-8 flex gap-4">
+          <a href="#upload" class="px-5 py-3 rounded-lg bg-gradient-to-r from-pink-500 to-indigo-500 shadow-lg font-medium">Upload Files</a>
+          <a href="#about" class="px-5 py-3 rounded-lg glass text-sm">Learn More</a>
+        </div>
+
+        <div class="mt-10 grid grid-cols-3 gap-3 max-w-sm">
+          <div class="glass p-3 rounded-xl">
+            <h4 class="text-sm font-semibold">Futuristic UI</h4>
+            <p class="text-xs text-slate-400">Space-themed, modern, and branded.</p>
+          </div>
+          <div class="glass p-3 rounded-xl">
+            <h4 class="text-sm font-semibold">Easy Uploads</h4>
+            <p class="text-xs text-slate-400">Drag & drop, preview, and ready for server hookup.</p>
+          </div>
+          <div class="glass p-3 rounded-xl">
+            <h4 class="text-sm font-semibold">SEO Ready</h4>
+            <p class="text-xs text-slate-400">Performance-minded layout for organic reach.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative flex items-center justify-center">
+        <!-- Planet visual -->
+        <div class="planet w-80 h-80 rounded-full bg-gradient-to-tr from-red-700 via-orange-600 to-pink-500 shadow-2xl flex items-center justify-center">
+          <svg viewBox="0 0 200 200" class="w-64 h-64 opacity-90" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="g1"><stop offset="0%" stop-color="#ffd2c2"/><stop offset="100%" stop-color="#ff6b6b"/></radialGradient>
+            </defs>
+            <circle cx="100" cy="100" r="90" fill="url(#g1)" opacity="0.95"/>
+            <g opacity="0.12" fill="#000">
+              <ellipse cx="80" cy="60" rx="36" ry="8"/>
+              <ellipse cx="130" cy="120" rx="28" ry="6"/>
+            </g>
+          </svg>
+        </div>
+      </section>
+    </header>
+
+    <!-- ABOUT + UPLOAD -->
+    <section id="about" class="px-6 sm:px-12 pb-12">
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-start">
+        <div class="space-y-4">
+          <h3 class="text-2xl font-bold">Why MarsBaseHub?</h3>
+          <p class="text-slate-300">Because the future deserves a beautiful home. This site is built to match what big-brand landing pages demand: strong hero, trust cues, clear CTA, and a delightful UI that turns visitors into contributors.</p>
+          <ul class="mt-4 space-y-2 text-slate-300">
+            <li>• Branded hero with visual identity</li>
+            <li>• Clear call-to-action and file upload system</li>
+            <li>• Mobile-first and SEO-friendly markup</li>
+          </ul>
+        </div>
+
+        <div id="upload" class="glass p-6 rounded-2xl">
+          <h4 class="text-lg font-semibold">Upload your files</h4>
+          <p class="text-sm text-slate-400 mt-1">Drag & drop files below. Previews appear instantly. To enable server uploads, connect to Netlify Functions, AWS S3, or any HTTP endpoint (instructions commented in code).</p>
+
+          <div id="dropzone" class="mt-4 border-2 border-dashed border-slate-700 rounded-xl p-6 text-center hover:border-indigo-500 transition cursor-pointer">
+            <input id="fileInput" type="file" multiple class="hidden" />
+            <div id="dzInner">
+              <p class="text-slate-400">Drop files here or <button id="browseBtn" class="text-indigo-300 underline">browse</button></p>
+              <p class="text-xs text-slate-500 mt-2">Supported: images, pdf, txt, zip, mp4 — max file size depends on your host.</p>
+            </div>
+            <div id="previews" class="mt-4 grid grid-cols-4 gap-3"></div>
+            <div class="mt-4 flex gap-2">
+              <button id="clearBtn" class="px-4 py-2 rounded-md glass text-sm">Clear</button>
+              <button id="sendBtn" class="px-4 py-2 rounded-md bg-indigo-600 text-white text-sm">Send to server</button>
+            </div>
+          </div>
+
+          <small class="block mt-3 text-slate-500">Note: This template includes client-side preview only. See README comments to enable full server upload.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-auto px-6 sm:px-12 py-8 border-t border-slate-800 text-slate-400">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        <div>
+          <strong>MarsBaseHub</strong>
+          <div class="text-xs">© <span id="year"></span> — Building the red future.</div>
+        </div>
+        <div class="text-sm">Made with ♥ for future explorers.</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // small helpers for upload UI
+    const dropzone = document.getElementById('dropzone');
+    const fileInput = document.getElementById('fileInput');
+    const browseBtn = document.getElementById('browseBtn');
+    const previews = document.getElementById('previews');
+    const clearBtn = document.getElementById('clearBtn');
+    const sendBtn = document.getElementById('sendBtn');
+
+    let files = [];
+
+    dropzone.addEventListener('click', () => fileInput.click());
+    browseBtn.addEventListener('click', (e) => { e.stopPropagation(); fileInput.click(); });
+
+    fileInput.addEventListener('change', (e) => handleFiles(e.target.files));
+
+    ['dragenter','dragover'].forEach(ev => dropzone.addEventListener(ev, (e)=>{ e.preventDefault(); dropzone.classList.add('border-indigo-500'); }));
+    ['dragleave','drop'].forEach(ev => dropzone.addEventListener(ev, (e)=>{ e.preventDefault(); dropzone.classList.remove('border-indigo-500'); }));
+
+    dropzone.addEventListener('drop', (e)=>{
+      const dt = e.dataTransfer; if(!dt) return;
+      handleFiles(dt.files);
+    });
+
+    function handleFiles(fileList){
+      for(const f of fileList){
+        files.push(f);
+        const el = document.createElement('div');
+        el.className = 'flex items-center gap-3 p-2 bg-slate-800 rounded-md';
+        const thumb = document.createElement('img');
+        thumb.className = 'thumb';
+        const info = document.createElement('div');
+        info.innerHTML = `<div class='text-xs font-medium'>${escapeHtml(f.name)}</div><div class='text-xxs text-slate-400 text-[11px]'>${formatBytes(f.size)}</div>`;
+
+        // try to show image preview
+        if(f.type.startsWith('image/')){
+          const reader = new FileReader();
+          reader.onload = (ev) => { thumb.src = ev.target.result; }
+          reader.readAsDataURL(f);
+        } else {
+          thumb.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"><rect width="100%" height="100%" fill="%23222" rx="8"/><text x="50%" y="50%" font-size="10" fill="%23aaa" text-anchor="middle" dominant-baseline="middle">FILE</text></svg>';
+        }
+
+        el.appendChild(thumb); el.appendChild(info);
+        previews.appendChild(el);
+      }
+    }
+
+    clearBtn.addEventListener('click', ()=>{ files = []; previews.innerHTML=''; fileInput.value = ''; });
+
+    sendBtn.addEventListener('click', async ()=>{
+      if(files.length===0){ alert('No files selected'); return; }
+
+      // Demo: create FormData and POST to a server endpoint.
+      // Replace 'YOUR_UPLOAD_ENDPOINT' with your server or Netlify Function URL.
+      // Example (Netlify Functions): '/.netlify/functions/upload'
+
+      const endpoint = 'YOUR_UPLOAD_ENDPOINT';
+      if(endpoint === 'YOUR_UPLOAD_ENDPOINT'){ alert('To enable server uploads, set your endpoint URL in the code. See README comment in index.html.'); return; }
+
+      const fd = new FormData();
+      files.forEach((f,i)=> fd.append('files[]', f));
+      try{
+        const res = await fetch(endpoint, { method: 'POST', body: fd });
+        if(res.ok) alert('Uploaded successfully'); else alert('Upload failed');
+      }catch(e){ console.error(e); alert('Upload error'); }
+    });
+
+    // small utils
+    function formatBytes(bytes){ if(bytes===0) return '0 B'; const k=1024; const sizes=['B','KB','MB','GB','TB']; const i=Math.floor(Math.log(bytes)/Math.log(k)); return parseFloat((bytes/Math.pow(k,i)).toFixed(2))+' '+sizes[i]; }
+    function escapeHtml(s){ return s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;'); }
+
+    // set year
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+
+  <!--
+    README / Deployment notes:
+    1) Save this file as index.html and push to your GitHub repo root.
+    2) For Netlify: connect the GitHub repo and set the build to publish the root (no build command needed). Netlify will serve index.html.
+    3) To enable real server uploads:
+       - Option A (Netlify Functions): create a function (e.g., functions/upload.js) that accepts multipart/form-data and stores files in an external storage (S3) or as attachments in a DB.
+       - Option B (AWS S3): implement a signed upload flow from the browser to S3.
+       - Option C (Form backend): point the endpoint variable above to a POST endpoint that accepts files.
+    4) Still want extra pages (blog, about, shop)? I can generate them and a ready-to-push structure.
+  -->
+</body>
+</html>
