@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MarsBaseHub - Future on Mars</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0b0c10, #1f2833);
+      color: #c5c6c7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+    }
+    header {
+      background: #45a29e;
+      padding: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #0b0c10;
+      letter-spacing: 2px;
+    }
+    main {
+      flex-grow: 1;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #66fcf1;
+      text-shadow: 0 0 10px #45a29e;
+    }
+    p {
+      max-width: 600px;
+      margin: 0 auto 40px auto;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #c5c6c7;
+    }
+    .mars-image {
+      max-width: 300px;
+      width: 100%;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #66fcf1;
+      transition: transform 0.3s ease;
+    }
+    .mars-image:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #1f2833;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #45a29e;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>MarsBaseHub</header>
+  <main>
+    <h1>Welcome to MarsBaseHub</h1>
+    <img
+      class="mars-image"
+      src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg"
+      alt="Mars"
+    />
+    <p>
+      Explore the future of humanity on Mars. Our mission is to build a
+      thriving base on the red planet, bringing science, technology, and
+      hope together for a new era.
+    </p>
+    <p>
+      Stay tuned for updates as we push the boundaries of space exploration.
+    </p>
+  </main>
+  <footer>© 2025 MarsBaseHub. All rights reserved.</footer>
+</body>
+</html>
