@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
-  branch: main   # agar aapki repo ki branch "master" hai to isko master likh dena
+  name: github
+  repo: YOUR-USERNAME/YOUR-REPO   # yahan apna GitHub username/repo-name likhna hai
+  branch: main                    # agar branch master hai to master likh dena
 
 media_folder: "static/uploads"    
 public_folder: "/uploads"
